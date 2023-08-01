@@ -1,0 +1,280 @@
+:root{
+    --color1: maroon;
+    --color2: gold;
+    --color3: black;
+}
+
+
+body{
+    
+    background-image: url("./BloodHaven_Productions.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header h1::before{
+    content:  " 💥 ";
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);    
+    color: var(--color2);
+    width: 100%;
+    height: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+header h1{
+
+    font-size: 45px;
+    font-weight: bolder;
+    display: inline;
+    position: relative;
+    margin: 12px;
+    flex-direction: column;
+}
+
+header li{
+
+    flex-wrap: wrap;
+    display: inline;
+    position: relative;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+#Quote{
+
+    border-radius: 25px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 750px;
+    height: 500px
+}
+
+header img{
+
+    border-radius: 25px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 300px;
+    height:200px   
+   
+}
+a:link{
+    color: var(--color2);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: var(--color2);
+    text-decoration: underline;
+    background-color: black;
+}
+
+header a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+header a:active{
+    color:aqua;
+    text-decoration: underline;
+    background-color: black;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: grey;
+    opacity: 0.9;
+    width: 100%;
+    height: 500px; /* will need to change just made this to make room to work with my paragraphs and content on the page. */
+    font-family: Arial;
+
+}
+
+section{
+
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: grey;
+    opacity: 0.9;
+    width: 100%;
+    height: 500px;
+    font-family: Arial;
+}
+
+.aboutme{
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color1);
+    font-size: 30px;
+    border-radius: 25px;
+    width: 100px;
+    height: 150px;
+    align-items: center;
+    position: relative;
+    color: var(--color2);
+    box-shadow: 10px 10px 20px black;
+    
+}
+
+#meP{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;  
+    width: 600px;
+    height: 140px;
+    font-size: 20px;
+    background-color: var(--color1);
+    box-shadow: 10px 10px 20px black;
+    border-radius: 5px;
+    color: var(--color2);
+    flex: 0 0 500px;
+
+
+}
+
+#work{
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color1);
+    font-size: 30px;
+    border-radius: 25px;
+    width: 100px;
+    height: 150px;
+    align-items: center;
+    position: relative;
+    color: var(--color2);
+    box-shadow: 10px 10px 20px black;
+    
+}
+
+
+
+.sectionb{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: start;
+    width: 100%;
+    height: 2000px;
+
+}
+
+#project{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    margin-top: 25px;
+    background-image: url(https://img1.wsimg.com/isteam/ip/ee09a47d-fffd-4d76-b504-059f0a735503/bloodSworn-issue1-limtedcover-v2.tif);
+    height: 750px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#project2{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    background-image: url(https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg?w=1380&t=st=1690764303~exp=1690764903~hmac=72e50e81e20daadf81cf67906162e6c13b48c0e8b5c030c5915d549fb4ad2b1b);
+    height: 200px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#project3{
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    background-image: url(https://elements-video-cover-images-0.imgix.net/files/261073161/code_1_loop_img.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=f7e15c5ed4f4bcda63c731e7a7475fd8);
+    height: 350px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+ section a:link, a:visited {
+    background-color: var(--color1);
+    color: white;
+    border: 10px solid var(--color1);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+  }
+  
+  section a:hover, a:active {
+    background-color: black;
+  }
+
+#contactme{
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    border-right: 10px solid var(--color1);
+    width: 125px;
+    height: 150px;
+    position: relative;
+    left: 110px;
+    justify-content: center;
+}
+
+footer{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--color1);    
+    color: var(--color2);
+    width: 100%;
+    height: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+
+#form{
+    
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
