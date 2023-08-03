@@ -25,6 +25,7 @@ body{
 header h1::before{
     content:  " 💥 ";
 }
+/*relates to everything in the header.*/
 header{
 
     display: var(--display);
@@ -59,7 +60,7 @@ header li{
 
 }
 
-
+/* quoted picture values.*/
 #Quote{
 
     border-radius: 25px;
@@ -69,6 +70,7 @@ header li{
     height: 500px
 }
 
+/*Portfolio picture values*/
 header img{
 
     border-radius: 25px;  
@@ -78,7 +80,8 @@ header img{
     height:200px   
    
 }
-a:link{
+/*header a links values*/
+header a:link{
     color: var(--color2);
     text-decoration: none;
 }
@@ -99,6 +102,7 @@ header a:active{
     text-decoration: underline;
     background-color: black;
 }
+/*relates to everything in the article.*/
 article{
     display: var(--display);
     justify-content: space-around;
@@ -112,7 +116,7 @@ article{
     font-family: Arial;
 
 }
-
+/*relates to everything in the section.*/
 section{
 
     display: var(--display);
@@ -127,7 +131,7 @@ section{
     height: 500px;
     font-family: Arial;
 }
-
+/*relates to everything in the aboutme.*/
 #aboutme{
      
     display: var(--display);
@@ -143,7 +147,7 @@ section{
     box-shadow: 10px 10px 20px black;
     
 }
-
+/*relates to everything in the about me paragraph.*/
 #meP{
  
     flex-wrap: var(--flex-wrap);
@@ -159,7 +163,7 @@ section{
 
 
 }
-
+/*relates to everything in the work.*/
 #work{
     
     display: var(--display);
@@ -177,7 +181,7 @@ section{
 }
 
 
-
+/*How section b is larger than normal section*/
 .sectionb{
 
     
@@ -189,6 +193,7 @@ section{
 
 }
 
+/*How each project is displayed in the website.*/
 #project{
 
     display: var(--display);
@@ -233,6 +238,7 @@ section{
 }
 
 
+/*project links values*/
  section a:link, a:visited {
     background-color: var(--color1);
     color: white;
@@ -249,19 +255,7 @@ section{
     background-color: black;
   }
 
-#contactme{
-    
-    display: var(--display);
-    flex-direction: column;
-    font-size: 30px;
-    border-right: 10px solid var(--color1);
-    width: 125px;
-    height: 150px;
-    position: relative;
-    left: 110px;
-    justify-content: var(--align);
-}
-
+/*relates to everything in the footer.*/
 footer{
 
     justify-content: var(--align);
@@ -276,7 +270,7 @@ footer{
 }
 
 
-
+/*form that is located in the footer*/
 #form{
     
     font-weight: var(--font);
