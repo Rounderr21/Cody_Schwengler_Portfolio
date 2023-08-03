@@ -1,10 +1,18 @@
+
+/* root is a way to change multiple elements that use the same values.*/
 :root{
     --color1: maroon;
     --color2: gold;
-    --color3: black;
+    --display: flex;
+    --font: bold;
+    --flex-direction: row;
+    --flex-wrap: wrap;
+    --align: center;
+    --position: relative;
 }
 
 
+/* body only applies to the body of the HTML document */
 body{
     
     background-image: url("./BloodHaven_Productions.png");
@@ -19,9 +27,9 @@ header h1::before{
 }
 header{
 
-    display: flex;
+    display: var(--display);
     justify-content: space-between;
-    align-items: center;
+    align-items: var(--align);
     background-color: var(--color1);    
     color: var(--color2);
     width: 100%;
@@ -33,21 +41,21 @@ header{
 header h1{
 
     font-size: 45px;
-    font-weight: bolder;
+    font-weight: var(--font);
     display: inline;
-    position: relative;
+    position: var(--position);
     margin: 12px;
     flex-direction: column;
 }
 
 header li{
 
-    flex-wrap: wrap;
+    flex-wrap: var(--flex-wrap);
     display: inline;
-    position: relative;
+    position: var(--position);
     margin: 15px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight:var(--font);
 
 }
 
@@ -56,17 +64,16 @@ header li{
 
     border-radius: 25px;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: var(--flex-direction);
     width: 750px;
     height: 500px
 }
 
 header img{
 
-    border-radius: 25px;
-    display: flex;
-    position: relative;
-    flex-direction: row;
+    border-radius: 25px;  
+    position: var(--position);
+    flex-direction: var(--flex-direction);
     width: 300px;
     height:200px   
    
@@ -93,27 +100,27 @@ header a:active{
     background-color: black;
 }
 article{
-    display: flex;
+    display: var(--display);
     justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-direction: var(--flex-direction);
+    flex-wrap: var(--flex-wrap);
+    text-align: var(--align);
     background-color: grey;
     opacity: 0.9;
     width: 100%;
-    height: 500px; /* will need to change just made this to make room to work with my paragraphs and content on the page. */
+    height: 500px;
     font-family: Arial;
 
 }
 
 section{
 
-    display: flex;
-    position: relative;
+    display: var(--display);
+    position: var(--position);
     justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
+    flex-wrap: var(--flex-wrap);
+    text-align: var(--align);
+    align-items: var(--align);
     background-color: grey;
     opacity: 0.9;
     width: 100%;
@@ -121,27 +128,26 @@ section{
     font-family: Arial;
 }
 
-.aboutme{
-    
-    display: flex;
-    flex-wrap: wrap;
+#aboutme{
+     
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
     background-color: var(--color1);
     font-size: 30px;
     border-radius: 25px;
     width: 100px;
     height: 150px;
-    align-items: center;
-    position: relative;
+    align-items: var(--align);
+    position: var(--position);
     color: var(--color2);
     box-shadow: 10px 10px 20px black;
     
 }
 
 #meP{
-
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;  
+ 
+    flex-wrap: var(--flex-wrap);
+    position: var(--position);  
     width: 600px;
     height: 140px;
     font-size: 20px;
@@ -156,15 +162,15 @@ section{
 
 #work{
     
-    display: flex;
-    flex-wrap: wrap;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
     background-color: var(--color1);
     font-size: 30px;
     border-radius: 25px;
     width: 100px;
     height: 150px;
-    align-items: center;
-    position: relative;
+    align-items: var(--align);
+    position: var(--position);
     color: var(--color2);
     box-shadow: 10px 10px 20px black;
     
@@ -174,9 +180,9 @@ section{
 
 .sectionb{
 
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    
+    flex-wrap: var(--flex-wrap);
+    position: var(--position);
     align-items: start;
     width: 100%;
     height: 2000px;
@@ -185,10 +191,10 @@ section{
 
 #project{
 
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
+    position: var(--position);
+    align-items: var(--align);
     margin-top: 25px;
     background-image: url(https://img1.wsimg.com/isteam/ip/ee09a47d-fffd-4d76-b504-059f0a735503/bloodSworn-issue1-limtedcover-v2.tif);
     height: 750px;
@@ -199,10 +205,10 @@ section{
 }
 #project2{
 
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
+    position: var(--position);
+    align-items: var(--align);
     background-image: url(https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg?w=1380&t=st=1690764303~exp=1690764903~hmac=72e50e81e20daadf81cf67906162e6c13b48c0e8b5c030c5915d549fb4ad2b1b);
     height: 200px;
     width: 50%;
@@ -214,10 +220,10 @@ section{
 
 #project3{
 
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
+    position: var(--position);
+    align-items: var(--align);
     background-image: url(https://elements-video-cover-images-0.imgix.net/files/261073161/code_1_loop_img.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=f7e15c5ed4f4bcda63c731e7a7475fd8);
     height: 350px;
     width: 50%;
@@ -231,10 +237,10 @@ section{
     background-color: var(--color1);
     color: white;
     border: 10px solid var(--color1);
-    font-weight: bold;
+    font-weight: var(--font);
     font-size: 25px;
     padding: 14px 25px;
-    text-align: center;
+    text-align: var(--align);
     text-decoration: underline;
     display: inline-block;
   }
@@ -245,7 +251,7 @@ section{
 
 #contactme{
     
-    display: flex;
+    display: var(--display);
     flex-direction: column;
     font-size: 30px;
     border-right: 10px solid var(--color1);
@@ -253,14 +259,14 @@ section{
     height: 150px;
     position: relative;
     left: 110px;
-    justify-content: center;
+    justify-content: var(--align);
 }
 
 footer{
 
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    justify-content: var(--align);
+    align-items: var(--align);
+    display: var(--display);
     background-color: var(--color1);    
     color: var(--color2);
     width: 100%;
@@ -273,8 +279,8 @@ footer{
 
 #form{
     
-    font-weight: bold;
+    font-weight: var(--font);
     width: 200px;
     height: 200px;
-    position: relative;
+    position: var(--position);
 }
