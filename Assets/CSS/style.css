@@ -1,280 +1,52 @@
-
-/* root is a way to change multiple elements that use the same values.*/
-:root{
-    --color1: maroon;
-    --color2: gold;
-    --display: flex;
-    --font: bold;
-    --flex-direction: row;
-    --flex-wrap: wrap;
-    --align: center;
-    --position: relative;
-}
-
-
-/* body only applies to the body of the HTML document */
 body{
-    
-    background-image: url("./BloodHaven_Productions.png");
-    background-repeat: no-repeat;
+    background: url("./Logo.png") black no-repeat center / cover;
     background-attachment: fixed;
-    background-size: cover;
-
+    background-size: contain;
 }
 
-header h1::before{
-    content:  " 💥 ";
+.grid-container{
+    display: grid;
+    grid-template-columns: 1.6fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas: 
+    'left content content content'
+    'left content content content'
+    'left content content content'
+    'left footer footer footer'
+    'left footer footer footer';
 }
-/*relates to everything in the header.*/
-header{
-
-    display: var(--display);
-    justify-content: space-between;
-    align-items: var(--align);
-    background-color: var(--color1);    
-    color: var(--color2);
-    width: 100%;
-    height: 200px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-
-header h1{
-
-    font-size: 45px;
-    font-weight: var(--font);
-    display: inline;
-    position: var(--position);
-    margin: 12px;
+.grid-item-1{
+    grid-area: left;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    grid-row: 1 / 6;
+    display: flex;
     flex-direction: column;
+    background-color: var(--gulfcoast);
+    text-align: center;
+    color: whitesmoke;
 }
-
-header li{
-
-    flex-wrap: var(--flex-wrap);
-    display: inline;
-    position: var(--position);
-    margin: 15px;
-    font-size: 20px;
-    font-weight:var(--font);
-
-}
-
-/* quoted picture values.*/
-#Quote{
-
-    border-radius: 25px;
-    justify-content: space-evenly;
-    flex-direction: var(--flex-direction);
-    width: 750px;
-    height: 500px
-}
-
-/*Portfolio picture values*/
-header img{
-
-    border-radius: 25px;  
-    position: var(--position);
-    flex-direction: var(--flex-direction);
-    width: 300px;
-    height:200px   
-   
-}
-/*header a links values*/
-header a:link{
-    color: var(--color2);
-    text-decoration: none;
-}
-
-header a:hover{
-    color: var(--color2);
-    text-decoration: underline;
-    background-color: black;
-}
-
-header a:visited{
-    color: white;
-    text-decoration: none;
-}
-
-header a:active{
-    color:aqua;
-    text-decoration: underline;
-    background-color: black;
-}
-/*relates to everything in the article.*/
-article{
-    display: var(--display);
-    justify-content: space-around;
-    flex-direction: var(--flex-direction);
-    flex-wrap: var(--flex-wrap);
-    text-align: var(--align);
-    background-color: grey;
-    opacity: 0.9;
-    width: 100%;
-    height: 500px;
-    font-family: Arial;
+.grid-item-2{
+    grid-area: content;
+    border-top: 1px solid black;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
 
 }
-/*relates to everything in the section.*/
-section{
-
-    display: var(--display);
-    position: var(--position);
-    justify-content: space-around;
-    flex-wrap: var(--flex-wrap);
-    text-align: var(--align);
-    align-items: var(--align);
-    background-color: grey;
-    opacity: 0.9;
-    width: 100%;
-    height: 500px;
-    font-family: Arial;
-}
-/*relates to everything in the aboutme.*/
-#aboutme{
-     
-    display: var(--display);
-    flex-wrap: var(--flex-wrap);
-    background-color: var(--color1);
-    font-size: 30px;
-    border-radius: 25px;
-    width: 100px;
-    height: 150px;
-    align-items: var(--align);
-    position: var(--position);
-    color: var(--color2);
-    box-shadow: 10px 10px 20px black;
-    
-}
-/*relates to everything in the about me paragraph.*/
-#meP{
- 
-    flex-wrap: var(--flex-wrap);
-    position: var(--position);  
-    width: 600px;
-    height: 140px;
-    font-size: 20px;
-    background-color: var(--color1);
-    box-shadow: 10px 10px 20px black;
-    border-radius: 5px;
-    color: var(--color2);
-    flex: 0 0 500px;
-
+.grid-item-3{
+    grid-area: footer;
+    border-top: 1px solid black;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4.5;
 
 }
-/*relates to everything in the work.*/
-#work{
-    
-    display: var(--display);
-    flex-wrap: var(--flex-wrap);
-    background-color: var(--color1);
-    font-size: 30px;
-    border-radius: 25px;
-    width: 100px;
-    height: 150px;
-    align-items: var(--align);
-    position: var(--position);
-    color: var(--color2);
-    box-shadow: 10px 10px 20px black;
-    
-}
-
-
-/*How section b is larger than normal section*/
-.sectionb{
-
-    
-    flex-wrap: var(--flex-wrap);
-    position: var(--position);
-    align-items: start;
-    width: 100%;
-    height: 2000px;
+.grid-item-4{
+    border-top: 1px solid black;
+    grid-column: 2 / 4;
+    grid-row:  4.5 / 5;
 
 }
 
-/*How each project is displayed in the website.*/
-#project{
-
-    display: var(--display);
-    flex-wrap: var(--flex-wrap);
-    position: var(--position);
-    align-items: var(--align);
-    margin-top: 25px;
-    background-image: url(./Screenshot\ \(109\).png);
-    height: 750px;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#project2{
-
-    display: var(--display);
-    flex-wrap: var(--flex-wrap);
-    position: var(--position);
-    align-items: var(--align);
-    background-image: url(./Screenshot\ \(108\).png);
-    height: 200px;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-#project3{
-
-    display: var(--display);
-    flex-wrap: var(--flex-wrap);
-    position: var(--position);
-    align-items: var(--align);
-    background-image: url(https://elements-video-cover-images-0.imgix.net/files/261073161/code_1_loop_img.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=f7e15c5ed4f4bcda63c731e7a7475fd8);
-    height: 350px;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-/*project links values*/
- section a:link, a:visited {
-    background-color: var(--color1);
-    color: white;
-    border: 10px solid var(--color1);
-    font-weight: var(--font);
-    font-size: 25px;
-    padding: 14px 25px;
-    text-align: var(--align);
-    text-decoration: underline;
-    display: inline-block;
-  }
-  
-  section a:hover, a:active {
-    background-color: black;
-  }
-
-/*relates to everything in the footer.*/
-footer{
-
-    justify-content: var(--align);
-    align-items: var(--align);
-    display: var(--display);
-    background-color: var(--color1);    
-    color: var(--color2);
-    width: 100%;
-    height: 300px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
-
-
-/*form that is located in the footer*/
-#form{
-    
-    font-weight: var(--font);
-    width: 200px;
-    height: 200px;
-    position: var(--position);
+#photo{
+    border-radius: 200px;
 }
