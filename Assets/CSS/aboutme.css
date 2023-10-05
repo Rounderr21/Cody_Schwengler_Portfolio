@@ -1,0 +1,91 @@
+body{
+    background: url(../Images/aboutMeBackground.jpg) black no-repeat center / cover;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1.6fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas: 
+    'header header header header'
+    'content content content content'
+    'content content content content'
+    'content content content content'
+    'footer footer footer footer';
+}
+.grid-item-1{
+    grid-area: header;
+    grid-row: 1;
+    grid-column: 1 / 6;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+}
+.grid-item-2{
+    grid-area: content;
+    grid-column: 1 / 6;
+    grid-row: 2 / 5;
+    color: whitesmoke;
+}
+.grid-item-3{
+    grid-area: footer;
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: whitesmoke;
+    justify-content: center;
+}
+ol{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: grey;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    text-shadow: 
+    2px 2px red;
+}
+#paragraph{
+    font-size: 20px;
+    text-shadow: 
+    0 0 10px grey,
+    0 0 20px  grey;
+}
+#paragraph2{
+    font-size: 20px;
+    text-shadow: 
+    0 0 7px red,
+    0 0 10px grey,
+    0 0 20px  grey;
+}
+.comic{
+    width: 200px;
+    height: 250px;
+}
+#thanks{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 
+    0 0 7px red;
+}
+button{
+    width: 100px;
+    height: 50px;
+}
