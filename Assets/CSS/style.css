@@ -1,6 +1,5 @@
 body{
-    background: url("./Logo.png") black no-repeat center / cover;
-    background-attachment: fixed;
+    background: url("../Images/Logo.png") black no-repeat center / cover;
     background-size: contain;
 }
 
@@ -9,44 +8,106 @@ body{
     grid-template-columns: 1.6fr 4fr 4fr;
     height: 100vh;
     grid-template-areas: 
-    'left content content content'
-    'left content content content'
-    'left content content content'
-    'left footer footer footer'
-    'left footer footer footer';
+    'header header header header'
+    'content content content content'
+    'content content content content'
+    'content content content content'
+    'footer footer footer footer';
 }
 .grid-item-1{
-    grid-area: left;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    grid-row: 1 / 6;
+    grid-area: header;
+    grid-row: 1;
+    grid-column: 1 / 6;
     display: flex;
-    flex-direction: column;
-    background-color: var(--gulfcoast);
+    flex-direction: row;
     text-align: center;
+    align-items: center;
     color: whitesmoke;
 }
 .grid-item-2{
     grid-area: content;
-    border-top: 1px solid black;
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-
+    grid-column: 1;
+    grid-row: 2 / 5;
+    color: whitesmoke;
+    align-items: baseline;
 }
 .grid-item-3{
     grid-area: footer;
-    border-top: 1px solid black;
-    grid-column: 2 / 4;
-    grid-row: 3 / 4.5;
-
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: end;
 }
-.grid-item-4{
-    border-top: 1px solid black;
-    grid-column: 2 / 4;
-    grid-row:  4.5 / 5;
-
-}
-
 #photo{
     border-radius: 200px;
+    width: 150px;
+}
+hr{
+    background-color: red;
+}
+ol{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+a:link{
+    color: orange;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: red;
+}
+#paragraph{
+    font-family: 'Roboto Slab', serif;
+}
+#github, #linkedin, #instagram, #facebook, #bloodhaven{
+    width: 25px;
+    height: 25px;
+    margin-left: 100px;
+}
+.neonText{
+    font-size: 25px;
+    color: black;
+    text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 90px #f00,
+    0 0 100px #f00,
+    0 0 150px#f00,
+    0 0 200px #f00,
+    0 0 250px #f00;
+
+}
+.flicker{
+    animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100%{
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #f00,
+        0 0 80px #f00,
+        0 0 90px #f00,
+        0 0 100px #f00,
+        0 0 150px #f00,
+        0 0 200px #f00,
+        0 0 250px #f00;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
 }
