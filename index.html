@@ -4,40 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--another type of google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <!--one type of google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <title>START PAGE</title>
+  <title>Home Page</title>
 </head>
 
 <body id="aboutme">
     <div class="grid-container">
         <!--Start of Grid Items-->
         <div class="grid-item grid-item-1" id="header">
-          <div id="headerTxt"> Cody Schwengler</div>
           <img id="photo" src="./Assets/Images/profile.jpg" alt="Picture of Cody Schwengler">
-          <hr>
+          <hr><!--possibly put the hr in there depends on what it looks like-->
+          <ol>
+            <ul><a href="./aboutme.html">About Me</a></ul>
+            <ul><a href="./projects.html">Projects</a></ul>
+            <ul><a href="https://docs.google.com/document/d/1AYQGocHNYthJoegaORFkPeB7ow2b9Vhy/edit?usp=sharing&ouid=113693766888778622789&rtpof=true&sd=true">Resume</a></ul>
+            <ul><a href="./contact.html">Contact Me</a></ul>
+          </ol>
+        </div>
     
         <!--Grid Item is main thing people see, the photo-->
         <div class="grid-item grid-item-2">
-          <div id="photoCompany">
-           <p id="paragraph">put stuff about me in here</p>
+          <div>
+            <h1>I'm Cody Schwengler</h1>
+           <p id="paragraph">Fullstack developer, Node.js lover, and Owner of BloodHaven Productions Comics.
+           </p>
+           <p> I invite you to explore my digital playground—a collection of projects, experiences, and code snippets that showcase my journey in the world of software development.</p>
           </div>
         </div>
-    
-        <!--Grid Item are the brands we sell-->
-        <div class="grid-item grid-item-3">
-          <div id="brandsContainer">
-            <div id="brandFont">links to projects, how to contact me, and about me</div>
-              <div id="container">
-              </div>
               
                   <!--Grid Item is The Footer-->
-              <div id="footerContainer">
-                <div id="footerTxt">COPYRIGHT &copy Cody Schwengler</div>
+              <div class="grid-item grid-item-3">
+                <div>
+                  <ol class="neonText flicker"> Find me on other platforms:
+                  <ul><a href="https://github.com/Rounderr21"><img id="github" src="./Assets/Images/Github.png" alt="Github account"></a></ul>
+                  <ul><a href="https://www.linkedin.com/in/cody-schwengler/"><img id="linkedin" src="./Assets/Images/linkedin.png" alt="Linkedin account"></a></ul>
+                  <ul><a href="https://www.instagram.com/bloodhaven_productions/"><img id="instagram" src="./Assets/Images/Instagram.png" alt="Instagram account"></a></ul>
+                  <ul><a href="https://www.facebook.com/profile.php?id=100083051096158"><img id="facebook" src="./Assets/Images/Facebook.png" alt="Facebook Profile"></a></ul>
+                  <ul><a href="https://bloodhavenproductions.com/"><img id="bloodhaven" src="./Assets/Images/BloodHaven_Productions.png" alt="Bloodhaven Productions Website"></a></ul>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
     </div>
-  <script src="./assets/js/script.js"></script>
+
 
 </body>
 
