@@ -1,37 +1,140 @@
-body{
-    background: url("../Images/Logo.png") black no-repeat center / cover;
-    background-size: contain;
+body {
+  background: url("../Images/Logo.png") black no-repeat center / cover;
+  background-size: contain;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1.6fr 4fr 4fr;
-    height: 100vh;
-    grid-template-areas: 
-    'header header header header'
-    'content content content content'
-    'content content content content'
-    'content content content content'
-    'footer footer footer footer';
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  height: 100vh;
+  grid-template-areas:
+    "header header header header"
+    "content content content content"
+    "content content content content"
+    "content content content content"
+    "footer footer footer footer";
 }
-.grid-item-1{
+.grid-item-1 {
+  grid-area: header;
+  grid-row: 1;
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  color: whitesmoke;
+}
+.grid-item-2 {
+  grid-area: content;
+  grid-column: 1;
+  grid-row: 2 / 5;
+  color: whitesmoke;
+}
+.grid-item-3 {
+  grid-area: footer;
+  display: flex;
+  grid-column: 1 / 6;
+  grid-row: 6;
+  color: whitesmoke;
+}
+#photo {
+  border-radius: 200px;
+  width: 300px;
+  margin-left: 100px;
+}
+ol {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+a:link {
+  color: orange;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: red;
+}
+#aboutme {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+}
+
+#github,
+#linkedin,
+#instagram,
+#facebook,
+#bloodhaven {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+}
+.neonText {
+  font-size: 40px;
+  color: black;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f00,
+    0 0 80px #f00, 0 0 90px #f00, 0 0 100px #f00, 0 0 150px#f00, 0 0 200px #f00,
+    0 0 250px #f00;
+}
+.flicker {
+  animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f00,
+      0 0 80px #f00, 0 0 90px #f00, 0 0 100px #f00, 0 0 150px #f00,
+      0 0 200px #f00, 0 0 250px #f00;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+/*max-width 1251 is perfect for everything adjust based on that.*/
+@media screen and (max-width: 2005px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      "content content content content"
+      "footer footer footer footer";
+  }
+  .grid-item-1 {
     grid-area: header;
     grid-row: 1;
-    grid-column: 1 / 6;
+    grid-column: 1 / 5;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     color: whitesmoke;
-}
-.grid-item-2{
+  }
+  .grid-item-2 {
     grid-area: content;
     grid-column: 1;
     grid-row: 2 / 5;
     color: whitesmoke;
     align-items: baseline;
-}
-.grid-item-3{
+  }
+  .grid-item-3 {
     grid-area: footer;
     display: flex;
     grid-column: 1 / 6;
@@ -39,75 +142,379 @@ body{
     color: whitesmoke;
     justify-content: flex-start;
     align-items: end;
-}
-#photo{
+  }
+  #photo {
     border-radius: 200px;
     width: 150px;
-}
-hr{
-    background-color: red;
-}
-ol{
+  }
+  ol {
     display: flex;
+  }
+  a {
+    text-decoration: none;
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+  }
+  #aboutme {
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+  }
+  #github,
+  #linkedin,
+  #instagram,
+  #facebook,
+  #bloodhaven {
+    width: 45px;
+    height: 45px;
+    margin-left: 100px;
+  }
+  .neonText {
+    font-size: 35px;
+  }
 }
-a{
+@media screen and (max-width: 1765px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      "content content content content"
+      "footer footer footer footer";
+  }
+  .grid-item-1 {
+    grid-area: header;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+  .grid-item-2 {
+    grid-area: content;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    color: whitesmoke;
+    align-items: baseline;
+  }
+  .grid-item-3 {
+    grid-area: footer;
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: end;
+  }
+  #photo {
+    border-radius: 200px;
+    width: 150px;
+  }
+  ol {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+  }
+  #aboutme {
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+  }
+  #github,
+  #linkedin,
+  #instagram,
+  #facebook,
+  #bloodhaven {
+    width: 40px;
+    height: 40px;
+    margin-left: 100px;
+  }
+  .neonText {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1606px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      "content content content content"
+      "footer footer footer footer";
+  }
+  .grid-item-1 {
+    grid-area: header;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+  .grid-item-2 {
+    grid-area: content;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    color: whitesmoke;
+    align-items: baseline;
+  }
+  .grid-item-3 {
+    grid-area: footer;
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: end;
+  }
+  #photo {
+    border-radius: 200px;
+    width: 150px;
+  }
+  ol {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+  }
+  #aboutme {
+    font-size: 17px;
+    font-family: "Roboto Slab", serif;
+  }
+  #github,
+  #linkedin,
+  #instagram,
+  #facebook,
+  #bloodhaven {
+    width: 35px;
+    height: 35px;
+    margin-left: 100px;
+  }
+  .neonText {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      "content content content content"
+      "footer footer footer footer";
+  }
+  .grid-item-1 {
+    grid-area: header;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+  .grid-item-2 {
+    grid-area: content;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    color: whitesmoke;
+    align-items: baseline;
+  }
+  .grid-item-3 {
+    grid-area: footer;
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: end;
+  }
+  #photo {
+    border-radius: 200px;
+    width: 150px;
+  }
+  ol {
+    display: flex;
+  }
+  a {
     text-decoration: none;
     display: inline;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
+  }
+  #aboutme {
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+  }
+  #github,
+  #linkedin,
+  #instagram,
+  #facebook,
+  #bloodhaven {
+    width: 30px;
+    height: 30px;
+    margin-left: 100px;
+  }
+  .neonText {
+    font-size: 20px;
+  }
 }
-a:link{
-    color: orange;
-}
-a:visited{
-    color: white;
-}
-a:hover{
-    color: red;
-}
-#paragraph{
-    font-family: 'Roboto Slab', serif;
-}
-#github, #linkedin, #instagram, #facebook, #bloodhaven{
+@media screen and (max-width: 1217px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header header"
+      "content content content content"
+      "content content content content"
+      "content content content content"
+      "footer footer footer footer";
+  }
+  .grid-item-1 {
+    grid-area: header;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+  .grid-item-2 {
+    grid-area: content;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    color: whitesmoke;
+    align-items: baseline;
+  }
+  .grid-item-3 {
+    grid-area: footer;
+    display: flex;
+    grid-column: 1 / 6;
+    grid-row: 6;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: end;
+  }
+  #photo {
+    border-radius: 200px;
+    width: 150px;
+  }
+  ol {
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+  }
+  #aboutme {
+    font-size: 11px;
+    font-family: "Roboto Slab", serif;
+  }
+  #github,
+  #linkedin,
+  #instagram,
+  #facebook,
+  #bloodhaven {
     width: 25px;
     height: 25px;
-    margin-left: 100px;
+    margin-left: 75px;
+  }
+  .neonText {
+    font-size: 17px;
+  }
 }
-.neonText{
-    font-size: 25px;
-    color: black;
-    text-shadow:
-    0 0 4px #fff,
-    0 0 11px #fff,
-    0 0 19px #fff,
-    0 0 40px #f00,
-    0 0 80px #f00,
-    0 0 90px #f00,
-    0 0 100px #f00,
-    0 0 150px#f00,
-    0 0 200px #f00,
-    0 0 250px #f00;
-
-}
-.flicker{
-    animation: flicker 1.5s infinite alternate;
-}
-@keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100%{
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #f00,
-        0 0 80px #f00,
-        0 0 90px #f00,
-        0 0 100px #f00,
-        0 0 150px #f00,
-        0 0 200px #f00,
-        0 0 250px #f00;
-    }
-    20%, 24%, 55% {
-        text-shadow: none;
-    }
+@media screen and (max-width: 576px) {
+  /* Styles for small screens */
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header"
+      "content content content"
+      "content content content"
+      "content content content"
+      "footer footer footer";
+  }
+  .grid-item-1 {
+    grid-area: header;
+    z-index: 2;
+    display: flex;
+    color: whitesmoke;
+    height: 2px;
+  }
+  #header {
+    display: block;
+  }
+  .grid-item-2 {
+    grid-area: content;
+    z-index: 1;
+    color: whitesmoke;
+    text-align: center;
+  }
+  .grid-item-3 {
+    grid-area: footer;
+    display: flex;
+    z-index: 0;
+    color: whitesmoke;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #photo {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+  }
+  #aboutme {
+    font-size: 11px;
+    font-family: "Roboto Slab", serif;
+  }
+  #github,
+  #linkedin,
+  #instagram,
+  #facebook,
+  #bloodhaven {
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+  }
+  .neonText {
+    font-size: 17px;
+    flex-direction: column;
+  }
 }
