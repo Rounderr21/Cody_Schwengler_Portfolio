@@ -450,9 +450,14 @@ a:hover {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1142px) {
   /* Styles for small screens */
+  body {
+    background: url("../Images/projectsBackground.jpg") no-repeat center / cover;
+    margin: 0;
+  }
   .grid-container {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -461,31 +466,24 @@ a:hover {
       "content content content"
       "content content content"
       "footer footer footer";
+      min-height: 100vh;
   }
   .grid-item-1 {
     grid-area: header;
-    z-index: 2;
-    display: flex;
+    justify-content: center;
     color: whitesmoke;
-    height: 2px;
-  }
-  #header {
-    display: block;
+    margin-right: 80px;
   }
   .grid-item-2 {
     grid-area: content;
-    z-index: 1;
     color: whitesmoke;
     text-align: center;
   }
   .grid-item-3 {
     grid-area: footer;
-    display: flex;
-    z-index: 0;
     color: whitesmoke;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
   }
   #photo {
     display: none;
@@ -515,6 +513,7 @@ a:hover {
   }
   .neonText {
     font-size: 17px;
+    color: turquoise;
     flex-direction: column;
   }
 }
