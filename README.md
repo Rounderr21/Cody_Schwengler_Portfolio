@@ -27,7 +27,7 @@ https://rounderr21.github.io/Portfolio-of-the-Future23/
 
 # Screenshot of the Project:
 
-![Alt text](/Assets/Images/Screenshot%20(81).png "Top of Page/About Me.")
-![Alt text](/Assets/Images/Screenshot%20(82).png "Work")
-![Alt text](/Assets/Images/Screenshot%20(83).png "Work Projects")
-![Alt text](/Assets/Images/Screenshot%20(84).png "Contact me/Footer.")
+![Alt text](/Assets/Images/Screenshot%20(140).png "Home Page.")
+![Alt text](/Assets/Images/Screenshot%20(141).png "About Me Page")
+![Alt text](/Assets/Images/Screenshot%20(143).png "Projects Page")
+![Alt text](/Assets/Images/Screenshot%20(142).png "Resume Page")
