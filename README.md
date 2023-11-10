@@ -18,6 +18,9 @@ Installed images to the local folder to be used in the HTML and CSS.
 # Github
 Pushed out commits of the HTML, CSS, and README when finishing any coding edits, as to ensure I could go back at anytime to earlier designs if need be.
 
+# Future Development
+It will include REACT and get rid of all of htmls. also use backend like express to make correct routes to each react page.
+
 # Project is located at this URL:
 
 https://rounderr21.github.io/Portfolio-of-the-Future23/
